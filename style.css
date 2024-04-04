@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f5fa;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 0 10px 10px;
+}
+
+nav .logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #03b961;
+}
+
+nav .logo a span {
+    color: black;
+    font-weight: 500;
+}
+
+nav .nav-items ul {
+    display: flex;
+    list-style: none;
+    margin: 0 180px;
+}
+
+nav .nav-items ul li a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: gray;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+nav .nav-items ul li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+}
+
+nav .nav-items ul li a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+nav .nav-items ul li a:hover {
+    color: black;
+}
+
+nav .contact-btn button {
+    background-color: #03b961;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav .contact-btn button:hover {
+    background-color: white;
+    color: #03b961;
+    border: 1px solid #03b961;
+}
+
+.home {
+    height: 90vh;
+    background-color: #f2f5fa;
+    background-image: radial-gradient(#03b961 1px, transparent 1px);
+    background-size: 60px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .container .left {
+    margin-right: 6.25rem;
+}
+
+.home .container .left h3 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.home .container .left h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.home .container .left h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.home .container .left h4 span {
+    color: #03b961;
+}
+
+.home .container .left .resume-btn button {
+    font-size: 0.9rem;
+    background-color: #03b961;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.home .container .left .resume-btn button:hover {
+    background-color: white;
+    color: #03b961;
+    border: 1px solid #03b961
+}
+
+.home .container .right .profile {
+    text-align: center;
+}
+
+.home .container .right .profile img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: linear-gradient(transparent, #03b961);
+    border: 1px solid #03b961;
+}
