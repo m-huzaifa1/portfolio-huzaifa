@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Huzaifa - Develper Portfolio</title>
 </head>
@@ -22,12 +23,17 @@
             <div class="nav-items">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About me</a></li>
+                    <li><a href="#about">About me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#education">Education</a></li>
                 </ul>
             </div>
+            <label class="mode">
+                <input type="checkbox" checked="checked" id="darkModeButton">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </label>
             <div class="contact-btn">
                 <button>Contact Me</button>
             </div>
@@ -39,18 +45,44 @@
             <div class="left">
                 <h3>Hi, I'm</h3>
                 <h1>Muhammad Huzaifa,</h1>
-                <h4>I'm into <span>&lt;Front-End Web Devlopment/&gt;</span> creating user friendly<br>websites. Weaving together code and creativity.</h4>
+                <h4>I'm into <span>&lt;Front-End Web Devlopment/&gt;</span> creating user friendly<br>websites. Weaving
+                    together code and creativity.</h4>
                 <div class="resume-btn">
                     <button>Download Resume</button>
                 </div>
             </div>
             <div class="right">
                 <div class="profile">
-                    <img src="./img/bitmoji.png" alt="">
+                    <img src="./img/bitmoji.png" alt="profile">
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="left">
+                <div class="profile">
+                    <img src="./img/bitmoji.png" alt="profile">
+                </div>
+                <div class="social-media">
+                    <p>M. Huzaifa</p>
+                    <a href="https://www.instagram.com/muhammad.huzaifa.01" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/m_huzaifa01?t=GGxs8I_kP2LK1spnF0MZzg&s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/muhammad.huzaifa.11" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/m-huzaifa1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-huzaifa1" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <p>About me</p>
+                <h1>Transforming visions into<br>exceptional portfolios</h1>
+                <p>Hey there! I'm Muhammad Huzaifa, a passionate front-end developer based in Karachi, Pakistan. I specialize in crafting immersive digital experiences that seamlessly blend design and functionality. From responsive layouts to dynamic user interfaces, I'm dedicated to pushing the boundaries of web development. When I'm not coding, you'll find me exploring the latest design trends or immersing myself in the tech community.Let's connect and create something amazing together!</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

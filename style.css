@@ -5,13 +5,30 @@
     font-family: 'poppins';
 }
 
+:root {
+    --color1: black;
+    --color2: white;
+    --text-color: gray;
+    --bg-color1: #e9f3ff;
+    --bg-color2: #f1f6fa;
+    --border-color: #d3d3d3;
+    --primary-color: #03b961;
+}
+
+body.dark-mode {
+    --color1: white;
+    /* --color2: #252525; */
+    --bg-color1: #252525;
+    --bg-color2: #272727;
+}
+
 nav {
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f2f5fa;
-    border: 1px solid #d3d3d3;
+    background-color: var(--bg-color1);
+    border: 1px solid var(--border-color);
     border-radius: 0 0 10px 10px;
 }
 
@@ -19,11 +36,11 @@ nav .logo a {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #03b961;
+    color: var(--primary-color);
 }
 
 nav .logo a span {
-    color: black;
+    color: var(--color1);
     font-weight: 500;
 }
 
@@ -36,7 +53,7 @@ nav .nav-items ul {
 nav .nav-items ul li a {
     text-decoration: none;
     margin: 0 15px;
-    color: gray;
+    color: var(--text-color);
     transition: all 0.5s ease;
     position: relative;
 }
@@ -48,7 +65,7 @@ nav .nav-items ul li a::after {
     width: 100%;
     left: 0;
     bottom: 0;
-    background-color: black;
+    background-color: var(--color1);
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.2s ease-in-out;
@@ -60,29 +77,74 @@ nav .nav-items ul li a:hover::after {
 }
 
 nav .nav-items ul li a:hover {
-    color: black;
+    color: var(--color1);
 }
 
 nav .contact-btn button {
-    background-color: #03b961;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--color2);
     padding: 5px 10px;
     border: 1px solid transparent;
     border-radius: 10px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 nav .contact-btn button:hover {
-    background-color: white;
-    color: #03b961;
-    border: 1px solid #03b961;
+    background-color: var(--color2);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.mode {
+    color: var(--color1);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fa-moon,
+.fa-sun {
+    /* position: absolute; */
+    animation: animate .5s;
+}
+
+.fa-moon {
+    display: none;
+}
+
+input:checked~.fa-moon {
+    display: block;
+}
+
+input:checked~.fa-sun {
+    display: none;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(-360deg) scale(0);
+        opacity: 0;
+    }
+
+    75% {
+        transform: rotate(25deg);
+    }
 }
 
 .home {
     height: 90vh;
-    background-color: #f2f5fa;
-    background-image: radial-gradient(#03b961 1px, transparent 1px);
-    background-size: 60px 60px;
+    background-color: var(--bg-color1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,11 +163,13 @@ nav .contact-btn button:hover {
 .home .container .left h3 {
     font-size: 2rem;
     font-weight: normal;
+    color: var(--color1);
 }
 
 .home .container .left h1 {
     font-size: 2.5rem;
     font-weight: 600;
+    color: var(--color1);
 }
 
 .home .container .left h4 {
@@ -127,6 +191,7 @@ nav .contact-btn button:hover {
     border-radius: 10px;
     transition: all 0.3s ease;
     margin-top: 1.5rem;
+    cursor: pointer;
 }
 
 .home .container .left .resume-btn button:hover {
@@ -144,6 +209,59 @@ nav .contact-btn button:hover {
     width: 350px;
     object-fit: cover;
     border-radius: 50%;
-    background: linear-gradient(transparent, #03b961);
-    border: 1px solid #03b961;
+    background: linear-gradient(transparent, var(--primary-color));
+    border: 1px solid var(--primary-color);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color2);
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    margin: 4rem 10rem;
+}
+
+.about .container .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+}
+
+.about .container .left .social-media {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 0.3rem 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color1);
+}
+
+.about .container .left .social-media i {
+    color: var(--color1);
+    margin: 0 0.2rem;
+}
+
+.about .container .left .profile img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: linear-gradient(transparent, var(--primary-color));
+    border: 1px solid var(--primary-color);
+}
+
+.about .container .right p {
+    color: var(--color1);
+}
+
+.about .container .right h1 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0.3rem 0 2rem;
 }
