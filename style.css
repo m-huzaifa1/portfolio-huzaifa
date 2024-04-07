@@ -47,7 +47,7 @@ nav .logo a span {
 nav .nav-items ul {
     display: flex;
     list-style: none;
-    margin: 0 180px;
+    margin: 0 160px;
 }
 
 nav .nav-items ul li a {
@@ -98,11 +98,12 @@ nav .contact-btn button:hover {
 
 .mode {
     color: var(--color1);
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     cursor: pointer;
     user-select: none;
+    margin-right: 1rem;
 }
 
 .fa-moon,
@@ -263,5 +264,55 @@ input {
 .about .container .right h1 {
     color: var(--primary-color);
     font-weight: 600;
+    font-size: 1.7rem;
     margin: 0.3rem 0 2rem;
+}
+
+.skills {
+    background-color: var(--bg-color2);
+}
+
+.skills .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .container .heading {
+    text-align: center;
+}
+
+.skills .container .heading p {
+    color: var(--color1);
+}
+
+.skills .container .heading h1 {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+}
+
+.skills .container .skills-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    flex-wrap: wrap;
+}
+
+.skills .container .skills-icons .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--color1);
+    margin: 1rem 1.7rem;
+}
+
+.skills .container .skills-icons .icon p {
+    font-size: 0.8rem;
+    color: var(--text-color);
 }
