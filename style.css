@@ -246,6 +246,27 @@ input {
 .about .container .left .social-media i {
     color: var(--color1);
     margin: 0 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.about .container .left .social-media i#ig:hover {
+    color: #d62976;
+}
+
+.about .container .left .social-media i#tw:hover {
+    color: #1DA1F2;
+}
+
+.about .container .left .social-media i#fb:hover {
+    color: #1877F2;
+}
+
+.about .container .left .social-media i#gh:hover {
+    color: #2b3137;
+}
+
+.about .container .left .social-media i#li:hover {
+    color: #0077B5;
 }
 
 .about .container .left .profile img {
