@@ -337,3 +337,65 @@ input {
     font-size: 0.8rem;
     color: var(--text-color);
 }
+
+/* .portfolio {
+    background-color: var(--bg-color2);
+} */
+
+.portfolio .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .container .heading {
+    text-align: center;
+}
+
+.portfolio .container .heading p {
+    color: var(--color1);
+}
+
+.portfolio .container .heading h1 {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+}
+
+.portfolio .container .projects-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 22vw;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    margin: 0 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--color1);
+}
+
+.card a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
