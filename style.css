@@ -370,8 +370,8 @@ input {
     align-items: center;
 }
 
-.card {
-    width: 22vw;
+.portfolio .container .projects-cards .card {
+    width: 20vw;
     border: 1px solid var(--border-color);
     border-radius: 20px;
     margin: 0 15px;
@@ -381,21 +381,18 @@ input {
     text-align: center;
 }
 
-.card img {
+.portfolio .container .projects-cards .card img {
     max-width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.card h4 {
+.portfolio .container .projects-cards .card h3 {
     margin-top: 10px;
-    font-size: 1.2rem;
     color: var(--color1);
 }
 
-.card a {
+.portfolio .container .projects-cards .card a {
     display: block;
     margin-top: 20px;
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
+    color: var(--color1);
 }
