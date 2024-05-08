@@ -384,7 +384,7 @@ input {
 }
 
 .portfolio .container .projects-cards .card:hover {
-    scale: 0.97;
+    scale: 1.05;
 }
 
 .portfolio .container .projects-cards .card img {
@@ -449,10 +449,12 @@ input {
 
 .education .container .school h3 {
     font-weight: 600;
+    color: var(--color1);
 }
 
 .education .container .school h4 {
     font-weight: 500;
+    color: var(--color1);
 }
 
 .education .container .school p {
@@ -462,4 +464,36 @@ input {
 .education .container .school .school-img img {
     border-radius: 20px 0 0 20px;
     aspect-ratio: 7 / 5;
+}
+
+footer {
+    background-color: var(--bg-color2);
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left .logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.left .logo a span {
+    color: var(--color1);
+    font-weight: 500;
+}
+
+footer .container .right {
+    display: flex;
+    align-items: center;
+}
+
+footer .container .right .details {
+    display: flex;
+    color: var(--text-color);
 }
