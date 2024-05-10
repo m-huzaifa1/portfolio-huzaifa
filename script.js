@@ -1,3 +1,5 @@
+// dark mode functionality
+
 let darkModeEnabled = localStorage.getItem('darkModeEnabled') === 'true';
 
 const enableDarkMode = () => {
@@ -26,3 +28,18 @@ darkModeButton.addEventListener('change', () => {
         disableDarkMode();
     }
 });
+
+// download resume functionality
+
+function downloadResume () {
+    var resumeUrl = './img/muhammad huzaifa resume.pdf';
+
+    var downloadAnchor = document.createElement('a');
+    downloadAnchor.href = resumeUrl;
+
+    downloadAnchor.download = 'muhammad_huzaifa_resume.pdf';
+
+    downloadAnchor.click();
+
+    downloadAnchor.remove();
+}

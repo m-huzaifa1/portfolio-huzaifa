@@ -17,7 +17,6 @@
 
 body.dark-mode {
     --color1: white;
-    /* --color2: #252525; */
     --bg-color1: #252525;
     --bg-color2: #272727;
 }
@@ -444,7 +443,7 @@ input {
 }
 
 .education .container .school .education-detail hr {
-    color: var(--border-color);
+    border-top: 1px solid var(--border-color);
 }
 
 .education .container .school h3 {
@@ -470,20 +469,30 @@ footer {
     background-color: var(--bg-color2);
 }
 
+footer hr {
+    border-top: 1px solid var(--border-color);
+    margin: 0 9rem;
+}
+
 footer .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 1rem 0;
 }
 
-.left .logo a {
+footer .container .left {
+    margin-right: 13rem;
+}
+
+footer .container .left .logo a {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
 }
 
-.left .logo a span {
+footer .container .left .logo a span {
     color: var(--color1);
     font-weight: 500;
 }
@@ -491,9 +500,27 @@ footer .container {
 footer .container .right {
     display: flex;
     align-items: center;
+    margin-left: 13rem;
 }
 
 footer .container .right .details {
     display: flex;
     color: var(--text-color);
+    align-items: center;
+}
+
+footer .container .right .details p {
+    margin: 0 1rem;
+    font-size: 0.85rem;
+}
+
+footer .container .right .social-media {
+    margin: 0 1rem;
+}
+
+footer .container .right .social-media a {
+    margin: 0 0.25rem;
+    color: var(--bg-color2);
+    background-color: var(--color1);
+    border-radius: 50%;
 }
