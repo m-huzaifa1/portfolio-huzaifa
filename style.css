@@ -11,14 +11,16 @@
     --text-color: gray;
     --bg-color1: #e9f3ff;
     --bg-color2: #f1f6fa;
-    --border-color: #d3d3d3;
+    --border-color: gray;
     --primary-color: #03b961;
+    --text-background: #dfe4eb;
 }
 
 body.dark-mode {
     --color1: white;
     --bg-color1: #252525;
     --bg-color2: #272727;
+    --text-background: #2b2b2b;
 }
 
 nav {
@@ -107,7 +109,6 @@ nav .contact-btn button:hover {
 
 .fa-moon,
 .fa-sun {
-    /* position: absolute; */
     animation: animate .5s;
 }
 
@@ -175,7 +176,7 @@ input {
 .home .container .left h4 {
     font-size: 1.2rem;
     font-weight: 500;
-    color: gray;
+    color: var(--text-color);
 }
 
 .home .container .left h4 span {
@@ -279,6 +280,13 @@ input {
 
 .about .container .right p {
     color: var(--color1);
+}
+
+p.head {
+    background-color: var(--text-background);
+    display: inline-flex;
+    padding: 0.1rem 0.8rem;
+    border-radius: 7px;
 }
 
 .about .container .right h1 {
@@ -436,14 +444,8 @@ input {
     border-radius: 20px;
     margin: 1rem 0;
     align-items: center;
-}
-
-.education .container .school .education-detail {
-    margin: 0 1rem;
-}
-
-.education .container .school .education-detail hr {
-    border-top: 1px solid var(--border-color);
+    justify-content: space-between;
+    width: 50vw;
 }
 
 .education .container .school h3 {
@@ -460,10 +462,22 @@ input {
     color: var(--text-color);
 }
 
+.education .container .school .school-img {
+    display: flex;
+}
+
 .education .container .school .school-img img {
     border-radius: 20px 0 0 20px;
-    width: 15rem;
-    height: 10rem;
+    width: 12rem;
+    height: 8rem;
+}
+
+.education .container .school .education-detail {
+    margin: 0 1rem;
+}
+
+.education .container .school .education-detail hr {
+    border-top: 1px solid var(--border-color);
 }
 
 footer {
@@ -523,5 +537,7 @@ footer .container .right .social-media a {
     margin: 0 0.25rem;
     color: var(--bg-color2);
     background-color: var(--color1);
-    border-radius: 50%;
+    height: 30px;
+    width: 50px;
+    border-radius: 100%;
 }
