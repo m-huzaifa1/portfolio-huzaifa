@@ -326,7 +326,7 @@ p.head {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    max-width: 40vw;
     flex-wrap: wrap;
 }
 
@@ -379,7 +379,7 @@ p.head {
 }
 
 .portfolio .container .projects-cards .card {
-    width: 20vw;
+    max-width: 20vw;
     border: 1px solid var(--border-color);
     border-radius: 20px;
     margin: 0 15px;
@@ -468,8 +468,8 @@ p.head {
 
 .education .container .school .school-img img {
     border-radius: 20px 0 0 20px;
-    width: 12rem;
-    height: 8rem;
+    width: 16vw;
+    height: 22vh;
 }
 
 .education .container .school .education-detail {
